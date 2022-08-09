@@ -32,7 +32,7 @@ body .headerHome {
     text-align: center; }
   body .headerHome .navEventos {
     font-weight: bold;
-    background-color: #e79e18; }
+    background-color: orange; }
 
 body .seccionCentral {
   display: grid;
@@ -114,7 +114,7 @@ body .footerHome {
 /*estilos ubicacion*/
 body header {
   grid-area: headerUbi;
-  background-color: orange; }
+  background-color: grey; }
   body header .ubicacionPiePagina {
     background-color: red;
     text-align: center;
@@ -126,17 +126,21 @@ body header {
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
     border: 10px solid black; }
+  body header .navUbicacion {
+    background-color: orange;
+    border: 10px solid black;
+    font-weight: bold; }
 
 body main {
-  background-color: #aeadad;
+  background-color: orange;
   font-weight: bold; }
 
 @media screen and (max-width: 600px) {
-  body .bodyUbi header {
-    background-color: grey; } }
+  body .contendorUbicacion {
+    background-color: black; } }
 
 @media screen and (max-width: 399px) {
-  body .bodyUbi {
+  body .contendorUbicacion {
     background-color: whitesmoke; } }
 
 /*estilos productos*/
@@ -162,11 +166,13 @@ body div .headerProducto {
   body div .headerProducto .container-fluid {
     background-color: orange;
     justify-content: space-evenly;
-    border: 3px solid black; }
+    border: 3px solid black;
+    font-weight: bold; }
     body div .headerProducto .container-fluid .navproductos {
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
-      font-weight: bold; }
+      font-weight: bold;
+      background-color: orange; }
   body div .headerProducto .aperitivosProductos {
     text-align: center; }
   body div .headerProducto .imagenAperitivos {
@@ -233,7 +239,7 @@ body div .footerProductos {
   background-color: grey; }
 
 @media screen and (max-width: 600px) {
-  body body {
+  body .contendorProductos {
     background-color: burlywood; }
   body .contenedorMultimedia {
     display: none; }
@@ -244,7 +250,7 @@ body div .footerProductos {
     grid-template-areas: "tablaProductos"  "fernetProductosTitulo"; } }
 
 @media screen and (max-width: 399px) {
-  body body {
+  body .contenedorProductos {
     background-color: whitesmoke; } }
 
 /*estilos eventos*/
@@ -263,7 +269,7 @@ body .headerEventos {
     font-size: 60px;
     border: 10px solid black; }
   body .headerEventos .navEventos {
-    background-color: grey;
+    background-color: orange;
     font-weight: bold;
     border: 10px solid black; }
 
@@ -276,11 +282,45 @@ body footer {
   text-align: center; }
 
 @media screen and (max-width: 600px) {
-  body .bodyEventos {
+  body .contedorEventos {
     background-color: grey; } }
 
 @media screen and (max-width: 399px) {
-  body .bodyEventos {
+  body .contedorEventos {
+    background-color: whitesmoke; } }
+
+/*estilos carrito compra*/
+body header {
+  display: flex;
+  flex-direction: column; }
+  body header .carritoPiePagina {
+    background-color: red; }
+  body header .carritoTitulo {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    border: 10px solid black; }
+  body header .navCarrito {
+    border: 10px solid black;
+    font-weight: bold;
+    background-color: orange; }
+  body header .listaCarrito {
+    background-color: black;
+    color: whitesmoke;
+    list-style: none;
+    text-decoration: none;
+    font-size: bold; }
+
+body main .card-body {
+  text-align: center;
+  background-color: grey; }
+
+@media screen and (max-width: 600px) {
+  body .contenedorCarrito {
+    background-color: grey; } }
+
+@media screen and (max-width: 399px) {
+  body .contenedorCarrito {
     background-color: whitesmoke; } }
 
 /*estilos contacto*/
@@ -321,48 +361,15 @@ body footer {
     text-align: center; }
 
 @media screen and (max-width: 600px) {
-  .bodyContacto {
+  .contenedorContacto {
     background-color: grey; }
   .card-group {
     display: none; } }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 399px) {
   .bodyContacto {
     background-color: whitesmoke; }
   .contactosTitulo {
     font-size: small;
     font-weight: bold;
     color: grey; } }
-
-/*estilos carrito compra*/
-body header {
-  display: flex;
-  flex-direction: column; }
-  body header .carritoPiePagina {
-    background-color: red; }
-  body header .carritoTitulo {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border: 10px solid black; }
-  body header .navCarrito {
-    border: 10px solid black;
-    font-weight: bold; }
-  body header .listaCarrito {
-    background-color: black;
-    color: whitesmoke;
-    list-style: none;
-    text-decoration: none;
-    font-size: bold; }
-
-body main .card-body {
-  text-align: center;
-  background-color: grey; }
-
-@media screen and (max-width: 600px) {
-  body body {
-    background-color: grey; } }
-
-@media screen and (max-width: 399px) {
-  body body {
-    background-color: whitesmoke; } }
