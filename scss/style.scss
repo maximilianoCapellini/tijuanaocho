@@ -411,7 +411,6 @@ body{
             text-align: center;
         }
         .gridm{
-            
             text-align: center;
             padding: 20px;
             display: grid;
@@ -425,32 +424,47 @@ body{
         .carritoUnos{
             display: flex;
             flex-direction: row;
-            align-items: center;
+            justify-self: center;
+            
+        
         }
         .carritoDos{
             display: flex;
             flex-direction: row;
-            align-items: center;
+            justify-self: center;
         }
         .carritoTres{
             display: flex;
             flex-direction: row;
-            align-items: center;
+            justify-self: center;
         }
         .hijom1{
             background-color: orange;
             font-size: 25px;
         }
         .hijom2 a{
-            border: 3px solid black ;
+           font-weight: bold;
+           gap: 5px;
+           margin: 20px;
+           border-radius: 10%;
+           background-color: whitesmoke;
+           text-shadow: 2px  black;
             font-size: 20px;
         }
         .hijom3 a{
-            border: 3px solid black ;
+            font-weight: bold;
+            margin:20px;
+            border-radius: 10%;
+            background-color: whitesmoke;
+            text-shadow: 2px  black;
             font-size: 20px;
         }
         .hijom4 a{
-            border: 3px solid black ;
+            font-weight: bold;
+            margin: 20px;
+           border-radius: 10%;
+           background-color: whitesmoke;
+           text-shadow: 2px  black;
             font-size: 20px;
         }
     }
@@ -460,13 +474,29 @@ body{
         .contenedorCarrito{
             background-color: grey;
         }
+        .materiales{
+            .carritoUnos{
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+            }
+            .carritoDos{
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+            }
+            .carritoTres{
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+            }
+        }
        
     
     }
     @media screen and (max-width:399px){  
-        .contenedorCarrito{
-            background-color: whitesmoke
-        }
+            .materiales{
+               background-color: whitesmoke;}
     }
 }
 
@@ -536,8 +566,4 @@ body{
             }
          }
 
-
-   
-
-         
- 
+        
