@@ -5,6 +5,20 @@
   box-sizing: border-box; }
 
 /*agregando variables */
+.TitleTemplate, body .carritoMain {
+  background-color: grey;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  gap: 50px;
+  font-display: inherit; }
+
 body .headerHome {
   display: grid;
   grid-template-columns: 7fr;
@@ -166,7 +180,7 @@ body div .headerProducto {
   body div .headerProducto .container-fluid {
     background-color: orange;
     justify-content: space-evenly;
-    border: 3px solid black;
+    border: 10px solid black;
     font-weight: bold; }
     body div .headerProducto .container-fluid .navproductos {
       text-align: center;
@@ -251,7 +265,7 @@ body div .footerProductos {
 
 @media screen and (max-width: 399px) {
   body .contenedorProductos {
-    background-color: whitesmoke; } }
+    background-color: orange; } }
 
 /*estilos eventos*/
 body .headerEventos {
@@ -311,9 +325,59 @@ body header {
     text-decoration: none;
     font-size: bold; }
 
-body main .card-body {
+body .carritoMain h3 {
+  font-size: 30px;
+  font-weight: bold; }
+
+body .carritoMain .compra {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding-top: 1px; }
+
+body .carritoMain .button {
+  align-self: center;
+  justify-content: center;
+  text-align: center; }
+
+body .carritoMain .gridm {
   text-align: center;
-  background-color: grey; }
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px, 400px, 400px, 400px;
+  grid-template-areas: "hijom1" "hijom2" "hijom3"; }
+
+body .carritoMain .carritoUnos {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+body .carritoMain .carritoDos {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+body .carritoMain .carritoTres {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+body .carritoMain .hijom1 {
+  background-color: orange;
+  font-size: 25px; }
+
+body .carritoMain .hijom2 a {
+  border: 3px solid black;
+  font-size: 20px; }
+
+body .carritoMain .hijom3 a {
+  border: 3px solid black;
+  font-size: 20px; }
+
+body .carritoMain .hijom4 a {
+  border: 3px solid black;
+  font-size: 20px; }
 
 @media screen and (max-width: 600px) {
   body .contenedorCarrito {

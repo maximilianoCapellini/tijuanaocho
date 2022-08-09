@@ -204,7 +204,7 @@ body{
             .container-fluid{
                 background-color:$colorSecundario;
                 justify-content: space-evenly;
-                border:3px solid black;
+                border:10px solid black;
                 font-weight: bold;
                 .navproductos{
                     @include leter-type;
@@ -313,7 +313,7 @@ body{
     }
     @media screen and (max-width:399px){  
         .contenedorProductos{
-            background-color: whitesmoke
+            background-color: orange;
         }
        
     
@@ -390,12 +390,72 @@ body{
             font-size: bold;
         }
     }
-    main{
-        .card-body{
+    .carritoMain{
+        @extend .TitleTemplate
+    };
+    .carritoMain{
+        h3{
+        font-size: 30px;
+        font-weight: bold;
+        }
+        .compra{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding-top:1px;
+        }
+        .button{
+    
+            align-self: center;
+            justify-content: center;
             text-align: center;
-            background-color: grey;
+        }
+        .gridm{
+            
+            text-align: center;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 80px, 400px, 400px, 400px;
+            grid-template-areas: 
+                 "hijom1"
+                 "hijom2"
+                 "hijom3";
+        }
+        .carritoUnos{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .carritoDos{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .carritoTres{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .hijom1{
+            background-color: orange;
+            font-size: 25px;
+        }
+        .hijom2 a{
+            border: 3px solid black ;
+            font-size: 20px;
+        }
+        .hijom3 a{
+            border: 3px solid black ;
+            font-size: 20px;
+        }
+        .hijom4 a{
+            border: 3px solid black ;
+            font-size: 20px;
         }
     }
+   
+
     @media screen and (max-width:600px){  
         .contenedorCarrito{
             background-color: grey;
