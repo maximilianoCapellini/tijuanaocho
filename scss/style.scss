@@ -366,6 +366,9 @@ body{
 body{
     header{
         @include flex-colum;
+        .carritoImg{
+            align-items: center
+        }
         .carritoTitulo{
            @include leter-type;
             font-size: 60px;
