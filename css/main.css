@@ -148,6 +148,11 @@ body header {
 body main {
   background-color: orange;
   font-weight: bold; }
+  body main .cartasUbi {
+    background-color: grey;
+    text-align: center; }
+    body main .cartasUbi .card-body {
+      background-color: grey; }
 
 @media screen and (max-width: 600px) {
   body .contendorUbicacion {
@@ -233,6 +238,7 @@ body div .mainProductos {
   body div .mainProductos .fernetProductosTitulo {
     background-color: grey;
     font-size: 3vw;
+    font-weight: bold;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
@@ -450,7 +456,7 @@ body .carritoMain .hijom4 a {
     text-align: center; }
 
 @media screen and (max-width: 600px) {
-  .contenedorContacto {
+  .bodyContacto {
     background-color: grey; }
   .card-group {
     display: none; } }

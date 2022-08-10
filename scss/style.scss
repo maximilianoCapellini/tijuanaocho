@@ -164,6 +164,13 @@ body{
     main{
         background-color:orange;
         font-weight: bold;
+        .cartasUbi{
+            background-color: grey;
+            text-align: center;
+            .card-body{
+                background-color: grey;
+            }
+        }
       
         
     }
@@ -269,6 +276,7 @@ body{
             .fernetProductosTitulo{
                 background-color:$colorTerciario;
                 font-size: 3vw;
+                font-weight: bold;
                 @include leter-type;
                 align-items: center;
                 margin-top: 5px;
@@ -506,8 +514,8 @@ body{
     grid-template-columns: 2fr;
     grid-template-rows: 0.3fr 1.6fr 0.1fr;
     grid-template-areas: "headerContacto"
-    "mainContacto"
-    "footerContacto";
+                         "mainContacto"
+                         "footerContacto";
         .headerContacto{
             grid-area: headerContacto;
             text-align: center;
@@ -548,7 +556,7 @@ body{
         }
 
         @media screen and (max-width:600px){
-            .contenedorContacto{
+            .bodyContacto{
                 background-color: $colorTerciario;
             }
             .card-group{
