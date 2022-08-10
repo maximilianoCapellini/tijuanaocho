@@ -39,7 +39,7 @@ body .headerHome {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 8vw;
+    font-size: 6vw;
     border: 10px solid #060505;
     justify-content: center; }
   body .headerHome p {
@@ -129,17 +129,14 @@ body .footerHome {
 body header {
   grid-area: headerUbi;
   background-color: grey; }
-  body header .ubicacionPiePagina {
-    background-color: red;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif; }
   body header .absolutImagen {
     text-align: center; }
   body header .ubicacionTitulo {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
-    border: 10px solid black; }
+    border: 10px solid black;
+    font-weight: bold; }
   body header .navUbicacion {
     background-color: orange;
     border: 10px solid black;
@@ -172,10 +169,6 @@ body div .headerProducto {
   display: flex;
   flex-wrap: wrap;
   background-color: grey; }
-  body div .headerProducto .productosPiePagina {
-    background-color: red;
-    font-weight: bold;
-    text-align: center; }
   body div .headerProducto .productosTitulo {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -278,16 +271,12 @@ body .headerEventos {
   background-color: grey;
   display: flex;
   flex-direction: column; }
-  body .headerEventos .eventosPiePagina {
-    background-color: red;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    align-items: center; }
   body .headerEventos .eventosTitulo {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
-    border: 10px solid black; }
+    border: 10px solid black;
+    font-weight: bold; }
   body .headerEventos .navEventos {
     background-color: orange;
     font-weight: bold;
@@ -313,13 +302,12 @@ body footer {
 body header {
   display: flex;
   flex-direction: column; }
-  body header .carritoPiePagina {
-    background-color: red; }
   body header .carritoTitulo {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
-    border: 10px solid black; }
+    border: 10px solid black;
+    font-weight: bold; }
   body header .navCarrito {
     border: 10px solid black;
     font-weight: bold;
@@ -330,6 +318,9 @@ body header {
     list-style: none;
     text-decoration: none;
     font-size: bold; }
+
+body .carritoMain .tituloDos {
+  font-weight: bold; }
 
 body .carritoMain h3 {
   font-size: 30px;
@@ -428,17 +419,17 @@ body .carritoMain .hijom4 a {
     grid-area: headerContacto;
     text-align: center;
     display: flex; }
-    .bodyContacto .headerContacto .contactoPiePagina {
-      background-color: red; }
     .bodyContacto .headerContacto .contactosTitulo {
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
       font-size: 60px;
+      font-weight: bold;
       border: 10px solid black; }
     .bodyContacto .headerContacto .navContacto {
       justify-content: center;
       border: 10px solid black;
-      font-weight: bold; }
+      font-weight: bold;
+      background-color: orange; }
   .bodyContacto .mainContacto {
     grid-area: mainContacto; }
     .bodyContacto .mainContacto .tablaColor {
