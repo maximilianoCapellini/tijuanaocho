@@ -39,7 +39,7 @@ body .headerHome {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 6vw;
+    font-size: 4vw;
     border: 10px solid #060505;
     justify-content: center; }
   body .headerHome p {
@@ -134,9 +134,10 @@ body header {
   body header .ubicacionTitulo {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border: 10px solid black;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 4vw;
+    border: 10px solid #060505;
+    justify-content: center; }
   body header .navUbicacion {
     background-color: orange;
     border: 10px solid black;
@@ -173,8 +174,9 @@ body div .headerProducto {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 5vw;
-    border: 10px solid black; }
+    font-size: 4vw;
+    border: 10px solid #060505;
+    justify-content: center; }
   body div .headerProducto .container-fluid {
     background-color: orange;
     justify-content: space-evenly;
@@ -274,9 +276,10 @@ body .headerEventos {
   body .headerEventos .eventosTitulo {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border: 10px solid black;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 4vw;
+    border: 10px solid #060505;
+    justify-content: center; }
   body .headerEventos .navEventos {
     background-color: orange;
     font-weight: bold;
@@ -302,12 +305,15 @@ body footer {
 body header {
   display: flex;
   flex-direction: column; }
+  body header .carritoImg {
+    align-items: center; }
   body header .carritoTitulo {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border: 10px solid black;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 4vw;
+    border: 10px solid #060505;
+    justify-content: center; }
   body header .navCarrito {
     border: 10px solid black;
     font-weight: bold;
@@ -422,9 +428,10 @@ body .carritoMain .hijom4 a {
     .bodyContacto .headerContacto .contactosTitulo {
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
-      font-size: 60px;
       font-weight: bold;
-      border: 10px solid black; }
+      font-size: 4vw;
+      border: 10px solid #060505;
+      justify-content: center; }
     .bodyContacto .headerContacto .navContacto {
       justify-content: center;
       border: 10px solid black;
